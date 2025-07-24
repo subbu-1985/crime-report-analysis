@@ -1,5 +1,7 @@
 # Andhra Pradesh Crime Analytics Dashboard
 
+<img width="1920" height="932" alt="demo" src="https://github.com/user-attachments/assets/40eed735-953d-43ee-ad2a-7ca277432dba" />
+
 This project is a comprehensive crime analytics system for Andhra Pradesh, India. It consists of a backend API service, a frontend dashboard, and machine learning models for crime classification and analysis.
 
 ## Project Structure
