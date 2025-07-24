@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Crime Analytics</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚨 Andhra Pradesh Crime Analytics Dashboard</h1>
+            <div class="district-selector">
+                <select id="district-select">
+                    <option value="">📍 Select District</option>
+                </select>
+            </div>
+        </header>
+        
+        <div class="main-content">
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="chatbot-container">
+                    <div class="chatbot-header">
+                        <h3>🤖 AP Police Assistant</h3>
+                    </div>
+                    <div id="chatbot-messages"></div>
+                    <div class="chat-input-container">
+                        <input type="text" id="chatbot-input" placeholder="Ask about crime data, safety tips...">
+                        <button id="send-btn">Send</button>
+                    </div>
+                </div>
+                
+                <div class="crime-stats">
+                    <h3>📊 District Statistics</h3>
+                    <div id="stats-container" class="loading">
+                        Select a district to view crime statistics
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>

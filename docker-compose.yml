@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgis/postgis:13-3.3
+    environment:
+      POSTGRES_PASSWORD: Subbu
+      POSTGRES_USER: postgres
+      POSTGRES_DB: ap_crime_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
